@@ -1,0 +1,27 @@
+# --- Interface and Display ---
+set linenumbers      # Display line numbers on the left margin
+set constantshow     # Always show cursor position (line, column) in status bar
+# set titlecolor white,blue # Colors for the top title bar
+# set statuscolor white,green # Colors for the bottom status bar
+set minibar          # Compact, clean, and minimalist status bar
+
+# --- Navigation and Selection ---
+set mouse            # Enable mouse support (click to place cursor, scroll to navigate)
+set zap              # Allow Backspace/Delete to erase the entire selected text block
+set smarthome        # Home key goes to the first non-blank character of code instead of line start
+
+# --- Formatting & Indentation ---
+set autoindent       # Automatically indent new lines to match the previous line
+set tabsize 4        # Set Tab width to 4 spaces
+set tabstospaces     # Convert typed Tabs into spaces (modern code style standard)
+set trimblanks       # Automatically strip trailing whitespace upon line wrap
+
+# --- Utility Features ---
+# set backup           # Enable auto-backup (appends a ~ to the original filename)
+set positionlog      # Remember and restore the cursor position when reopening files
+
+# --- Syntax Highlighting ---
+# Automatically include all available language syntax files from the Linux system
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"
