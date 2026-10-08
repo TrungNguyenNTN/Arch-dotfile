@@ -1,0 +1,20 @@
+# noctalia-greeter greeter.toml (declarative; Nix-safe; UI and Sync never write this)
+# Last-used session lives in sync.toml; UI/Sync also fall back to sync.toml for scheme
+# and output layout/transforms when not set here. Session power actions/menu entries are
+# Sync-only (sync.toml [session.power]/[[session.actions]]) and are not settable here.
+# [session] default, [user] default
+# [appearance] scheme, password_style, hide_logo, power_buttons_position, scheme_selector_position, theme_mode, corner_radius_scale, font_family
+# [appearance.palette] full color role table, [appearance.wallpaper] path/fill_mode/fill_color
+# [appearance.wallpapers.<connector>] per-output wallpaper overrides
+# [output] name/layout/scale/scales/width/height/refresh_rate/transforms, [idle] timeout, [cursor] theme/size/path
+# [keyboard] layout/variant/options/numlock
+# [auth] allow_empty_password (bool), request_timeout (0-3600 seconds; default 60, 0 disables)
+
+[appearance]
+password_style="random"
+
+[keyboard]
+numlock=false
+
+[auth]
+allow_empty_password=false
